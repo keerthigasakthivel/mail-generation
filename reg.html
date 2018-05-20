@@ -1,0 +1,125 @@
+<html>
+<head>
+<style>
+h2,h3{
+text-align:center;
+color:grey;
+font-size:45pt;
+text-shadow:10px 0xcfwpx grey;
+}
+
+input[type=text] ,input[type=email],input[type=datetime-local],input[type=number],input[type=tel],input[type=password]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+border-radius:5px;
+ border: 2px solid grey;
+}
+input[type=text]:focus {
+    background-color:lightblue;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+select ,input[type=email]{
+    width: 40%;
+    padding: 16px 20px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body >
+<div align="left">
+<form action="reg.php" method="POST">
+<h2>RESUME </h2>
+
+NAME :<br>
+<input type="text" name="name" placeholder="name" required>
+<br><br><br>
+AGE:<br>
+<input type="text" name="age" placeholder="age" required>
+<br><br><br>
+
+FATHERS NAME:<br>
+
+<input type="text" name="ffname" placeholder="name" required>
+<br><br><br>
+
+DATE OF BIRTH:<br>
+<input type="datetime-local" name="dobb"><br><br>
+
+ADDRESS:<br>
+<textarea name="address" rows="10" cols="30"></textarea><br><br>
+</fieldset>
+SELECT GENDER:<br>
+<input type="radio" name="gender" value="male">male<br>
+<input type="radio" name="gender" value="female">female<br><br>
+<br>
+QUALIFICATION:<br>
+<select name="deptt">
+<option name="MBA" >MBA<br>
+<option name="MCA" >MCA<br>
+<option name="B.E" >B.E<br>
+<option name="M.E">M.E<br>
+<option name="M.S">M.S<br>
+</select>
+<br><br><br>
+
+NATIONALITY:<BR>
+
+<input type="text" name="nation"  required>
+<br><br><br>
+
+YEAR OF EXPERIENCE:<BR>
+<input type="number" name="year" required>
+
+<br><br><br>
+MOBILE NUMBER:	<br>
+<input type="text" name="no"  placeholder="mobile no" required>
+<br><br><br>
+EMAIL ID:<br>
+<input type="email" name="mail" placeholder="mail" required>
+<br><br><br>
+CAREER OBSECTIVE:<br>
+
+<textarea name="cobj" rows="10" cols="30"></textarea><br><br><br>
+CGPA:<br>
+<input type="number" name="cgp"  required><br><br><br>
+FIELD OF INTEREST:<br>
+<input type="text" name="field" required><br><br><br>
+LANGUAGES KNOWN:<br>
+
+<input type="text" name="ll" required>
+<br><br>
+EXTRA CURRICLUAR ACTIVITIES:<br>
+
+<input type="text" name="ex" placeholder="activity" required>
+<br><br><br>
+<div align="center">
+<input type="submit" value="register"></h5>
+</div>
+<br><br>
+</form>
+</div>
+</body>
+</html>
